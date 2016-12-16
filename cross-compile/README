@@ -1,0 +1,10 @@
+This can be used to build binaries for x86 and AMD64 targets. Just create a makefile
+for your project and run:
+  ./build-all.sh <project dir>
+
+The script will copy your project to a local directory and build it for each desired
+architecture inside a docker container.
+
+Prerequisites:
+- install docker-engine
+- git clone https://github.com/dockcross/dockcross dockcross
