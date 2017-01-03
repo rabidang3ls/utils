@@ -18,5 +18,5 @@ for arch in "${ALL_ARCH[@]}"; do
   chmod +x dockcross-$arch
 
   # Build project
-  ./dockcross-$arch bash -c "cd $dest; make clean; make; cd .."
+  ./dockcross-$arch bash -c "cd $dest; make clean; make; cd -"
 done
