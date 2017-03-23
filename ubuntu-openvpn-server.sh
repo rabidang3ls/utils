@@ -45,8 +45,8 @@ sed -r -i.bak "/KEY_NAME=/ s/(\"[^\"]+\")/server/" vars
 cprompt Building server key pair, accept all defaults and answer \"y\" to sign keys && echo ""
 ./build-key-server server
 echo -ne '\e[31;1mWARNING: \e[0m'
-cprompt "Building Diffie-Hellman parameters in the background..." && echo ""
-./build-dh &>dh-params-output.log &
+cprompt "Building Diffie-Hellman parameters..." && echo ""
+./build-dh &>dh-params-output.log
 openvpn --genkey --secret keys/ta.key
 
 # Copy necessary files to openvpn server directory
