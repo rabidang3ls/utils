@@ -18,9 +18,9 @@ echo ""
 read -p "Country: " _country
 _country="${_country:-US}"
 read -p "State:   " _state
-_state="${_state:-NY}"
+_state="${_state:-UT}"
 read -p "City:    " _city
-_city="${_city:-'New York City'}"
+_city="${_city:-'Salt Lake City'}"
 read -p "Org:     " _org
 _org="${_org:-DigitalOcean}"
 read -p "Email:   " _email
